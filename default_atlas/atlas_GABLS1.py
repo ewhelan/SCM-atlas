@@ -20,13 +20,13 @@ dir_references = os.getenv('SCM_REFERENCES')
 # References for AYOTTE/00SC atlas
 ####################################
 
-tmp = OrderedDict([
-       ('MO'     ,  {'ncfile': os.path.join(dir_references, 'GABLS1/files/MO_1m_allvar.nc'), 'line': 'k'}),
-       ])
+#EW tmp = OrderedDict([
+#EW        ('MO'     ,  {'ncfile': os.path.join(dir_references, 'GABLS1/files/MO_1m_allvar.nc'), 'line': 'k'}),
+#EW        ])
 
 references = []
-for ref in tmp.keys():
-    references.append(Dataset(name=ref,case='GABLS1',subcase='REF',ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
+#EW for ref in tmp.keys():
+#EW     references.append(Dataset(name=ref,case='GABLS1',subcase='REF',ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
 
 ####################################
 # Configuration file for GABLS1 atlas

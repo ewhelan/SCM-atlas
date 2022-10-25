@@ -20,16 +20,16 @@ dir_references = os.getenv('SCM_REFERENCES')
 # References for ARMCU atlas
 ####################################
 
-tmp = OrderedDict([
-       ('LES_5min',{'ncfile': os.path.join(dir_references, 'ARMCU/ARMCU_LES_MESONH_RR.nc'),  'line': 'k'}),
-       ('BLM_cor', {'ncfile': os.path.join(dir_references, 'ARMCU_BOMEX_BLM/ARMCU_cor.nc'),  'line': 'k.'}),
-       ('BLM_cld', {'ncfile': os.path.join(dir_references, 'ARMCU_BOMEX_BLM/ARMCU_cld.nc'),  'line': 'b.'}),
-       ('BLM_csam',{'ncfile': os.path.join(dir_references, 'ARMCU_BOMEX_BLM/ARMCU_csam.nc'), 'line': 'g.'}),
-       ])
+#EW tmp = OrderedDict([
+#EW        ('LES_5min',{'ncfile': os.path.join(dir_references, 'ARMCU/ARMCU_LES_MESONH_RR.nc'),  'line': 'k'}),
+#EW        ('BLM_cor', {'ncfile': os.path.join(dir_references, 'ARMCU_BOMEX_BLM/ARMCU_cor.nc'),  'line': 'k.'}),
+#EW        ('BLM_cld', {'ncfile': os.path.join(dir_references, 'ARMCU_BOMEX_BLM/ARMCU_cld.nc'),  'line': 'b.'}),
+#EW        ('BLM_csam',{'ncfile': os.path.join(dir_references, 'ARMCU_BOMEX_BLM/ARMCU_csam.nc'), 'line': 'g.'}),
+#EW        ])
 
 references = []
-for ref in tmp.keys():
-    references.append(Dataset(name=ref,case='ARMCU',subcase='REF',ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
+#EW for ref in tmp.keys():
+#EW     references.append(Dataset(name=ref,case='ARMCU',subcase='REF',ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
 
 ####################################
 # Configuration file for ARMCU atlas

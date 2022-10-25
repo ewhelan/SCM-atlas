@@ -20,15 +20,15 @@ dir_references = os.getenv('SCM_REFERENCES')
 # References for ARMCU atlas
 ####################################
 
-tmp = OrderedDict([
-       ('LES',      {'ncfile': os.path.join(dir_references, 'RICO/RICO_LES_MESONH_RR.nc'),      'line': 'k'}),
-       ('LES_core', {'ncfile': os.path.join(dir_references, 'RICO/RICO_LES_MESONH_RR_core.nc'), 'line': 'g.'}),
-       ('BLM_csam', {'ncfile': os.path.join(dir_references, 'RICO/RICO_LES_MESONH_RR_csam.nc'), 'line': 'k.'}),
-       ])
+#EW tmp = OrderedDict([
+#EW        ('LES',      {'ncfile': os.path.join(dir_references, 'RICO/RICO_LES_MESONH_RR.nc'),      'line': 'k'}),
+#EW        ('LES_core', {'ncfile': os.path.join(dir_references, 'RICO/RICO_LES_MESONH_RR_core.nc'), 'line': 'g.'}),
+#EW        ('BLM_csam', {'ncfile': os.path.join(dir_references, 'RICO/RICO_LES_MESONH_RR_csam.nc'), 'line': 'k.'}),
+#EW        ])
 
 references = []
-for ref in tmp.keys():
-    references.append(Dataset(name=ref,case='RICO',subcase='SHORT',ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
+#EW for ref in tmp.keys():
+#EW     references.append(Dataset(name=ref,case='RICO',subcase='SHORT',ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
 
 ####################################
 # Configuration file for ARMCU atlas

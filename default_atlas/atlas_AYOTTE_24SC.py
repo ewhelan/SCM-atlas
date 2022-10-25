@@ -21,14 +21,14 @@ dir_references = os.getenv('SCM_REFERENCES')
 
 subcase = '24SC'
 
-tmp = OrderedDict([
-       ('LES'     ,  {'ncfile': os.path.join(dir_references, 'AYOTTE/AYOTTE{0}_LES_MESONH_RR.nc'.format(subcase))     , 'line': 'k'}),
-       ('LES_csam',  {'ncfile': os.path.join(dir_references, 'AYOTTE/AYOTTE{0}_LES_MESONH_RR_csam.nc'.format(subcase)), 'line': 'k.'}),
-       ])
+#EW tmp = OrderedDict([
+#EW        ('LES'     ,  {'ncfile': os.path.join(dir_references, 'AYOTTE/AYOTTE{0}_LES_MESONH_RR.nc'.format(subcase))     , 'line': 'k'}),
+#EW        ('LES_csam',  {'ncfile': os.path.join(dir_references, 'AYOTTE/AYOTTE{0}_LES_MESONH_RR_csam.nc'.format(subcase)), 'line': 'k.'}),
+#EW        ])
 
 references = []
-for ref in tmp.keys():
-    references.append(Dataset(name=ref,case='AYOTTE',subcase=subcase,ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
+#EW for ref in tmp.keys():
+#EW     references.append(Dataset(name=ref,case='AYOTTE',subcase=subcase,ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
 
 ########################################
 # Configuration file for AYOTTE/24SC atlas

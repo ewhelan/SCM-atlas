@@ -21,13 +21,13 @@ dir_references = os.getenv('SCM_REFERENCES')
 # References for FIRE atlas
 ####################################
 
-tmp = OrderedDict([
-       ('LES',{'ncfile': os.path.join(dir_references, 'FIRE/FIRE_LES_MESONH_RR.nc'),  'line': 'k'}),
-       ])
+#EW tmp = OrderedDict([
+#EW        ('LES',{'ncfile': os.path.join(dir_references, 'FIRE/FIRE_LES_MESONH_RR.nc'),  'line': 'k'}),
+#EW        ])
 
 references = []
-for ref in tmp.keys():
-    references.append(Dataset(name=ref,case='FIRE',subcase='REF',ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
+#EW for ref in tmp.keys():
+#EW     references.append(Dataset(name=ref,case='FIRE',subcase='REF',ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
 
 ####################################
 # Configuration file for SANDU atlas

@@ -22,17 +22,17 @@ dir_references = os.getenv('SCM_REFERENCES')
 
 subcase = 'EUCLIPSE'
 
-tmp = OrderedDict([
-       ('SAM'      , {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_SAM_RR.nc'.format(subcase)      , 'line': 'k'  }),
-       ('UCLA'     , {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_UCLA_RR.nc'.format(subcase)     , 'line': 'b--'}),
-       ('DALES'    , {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_DALES_RR.nc'.format(subcase)    , 'line': 'b-.'}),
-       ('DHARMA'   , {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_DHARMA_RR.nc'.format(subcase)   , 'line': 'g--'}),
-       ('MetOffice', {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_MetOffice_RR.nc'.format(subcase), 'line': 'g-.'}),
-       ])
+#EW tmp = OrderedDict([
+#EW        ('SAM'      , {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_SAM_RR.nc'.format(subcase)      , 'line': 'k'  }),
+#EW        ('UCLA'     , {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_UCLA_RR.nc'.format(subcase)     , 'line': 'b--'}),
+#EW        ('DALES'    , {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_DALES_RR.nc'.format(subcase)    , 'line': 'b-.'}),
+#EW        ('DHARMA'   , {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_DHARMA_RR.nc'.format(subcase)   , 'line': 'g--'}),
+#EW        ('MetOffice', {'ncfile': os.path.join(dir_references, 'ASTEX/ASTEX_{0}_LES_MetOffice_RR.nc'.format(subcase), 'line': 'g-.'}),
+#EW        ])
 
 references = []
-for ref in tmp.keys():
-    references.append(Dataset(name=ref,case='ASTEX',subcase=subcase,ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
+#EW for ref in tmp.keys():
+#EW     references.append(Dataset(name=ref,case='ASTEX',subcase=subcase,ncfile=tmp[ref]['ncfile'],line=tmp[ref]['line']))
 
 ########################################
 # Configuration file for SANDU/FAST atlas
