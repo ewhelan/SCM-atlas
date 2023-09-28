@@ -12,9 +12,9 @@ import atlas1d
 from atlas1d.Model import Model
 from atlas1d.Simulation import Simulation
 
-dir_musc = '/home/ewhelan/EMS_test_new/ems_test'
-
-dir_atlas = '/home/ewhelan/Atlas1DU/1.2.1'
+home_path = os.environ["HOME"]
+dir_musc = home_path + '/ems_exec'
+dir_atlas = home_path + '/Atlas'
 name_atlas = 'HARM'
 
 
